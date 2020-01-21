@@ -17,4 +17,29 @@ int main()
     return 0;
     
     
+} 
+
+//Second method 
+
+#include<stdio.h>
+
+void main()
+{
+    int number;
+
+    float temp, result;
+
+    printf("Provide the number: \n");
+    scanf("%d", &number);
+
+    result = number / 2;
+    temp = 0; 
+
+    while(result != temp){
+        temp = result;
+        result = ( number/temp + temp) / 2;
+    }
+
+    printf("The square root is '%f'", result);
 }
+
